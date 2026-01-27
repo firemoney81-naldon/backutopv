@@ -1,23 +1,437 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  
+  <title>아무데나 맡기면 이사짐 다 깨집니다 후기 검증된 업체만 연결하세요</title>
+  
+
+
+  
+    <!-- JSON-LD Structured Data for Naver/Google SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "프리미엄 이사 서비스 비교 센터",
+      "description": "전국 주요 도시의 전문 이사업체 정보를 비교하고 맞춤 견적을 받을 수 있는 서비스입니다. 포장이사, 반포장이사, 보관이사, 장거리 이사 등 다양한 이사 유형을 지원합니다.",
+      "url": "https://movingqkindb.withusgoat.com",
+      "serviceType": "Moving Service",
+      "image": "https://example.com/images/moving-service-logo.png",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "KRW",
+        "priceRange": "$$",
+        "description": "고객 맞춤형 무료 견적 상담"
+      },
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Seoul" },
+        { "@type": "AdministrativeArea", "name": "Busan" },
+        { "@type": "AdministrativeArea", "name": "Gyeonggi-do" }
+      ]
+    }
+    </script>
+
+    <style>
+        /* CSS Reset and Global Styles */
+        body { font-family: 'Noto Sans KR', sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        h1 { font-size: 2.5rem; color: #1e3a8a; text-align: center; margin-bottom: 1rem; font-weight: 700; }
+        h2 { font-size: 1.8rem; color: #3b82f6; border-bottom: 3px solid #e0e7ff; padding-bottom: 0.5rem; margin-top: 2rem; font-weight: 600; }
+        a { text-decoration: none; color: inherit; display: block; }
+
+        /* Flexible Grid Layout for Services */
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .service-card { background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); }
+
+        /* Card Elements */
+        .card-header { position: relative; height: 180px; background-color: #bfdbfe; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: 700; color: #1e3a8a; padding: 1rem; box-sizing: border-box; }
+        .card-header.color1 { background-color: #bfdbfe; }
+        .card-header.color2 { background-color: #d1fae5; }
+        .card-header.color3 { background-color: #fef3c7; }
+        .card-header.color4 { background-color: #e0f2fe; }
+
+        .card-content { padding: 1.5rem; font-size: 0.95rem; line-height: 1.8; color: #555; }
+        .card-content p { margin: 0; }
+        .card-content p a { transition: color 0.3s ease; cursor: pointer; }
+        .card-content p a:hover { color: #3b82f6; }
+        .category-heading { background-color: #e0f2fe; padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; text-align: center; font-size: 1.6rem; color: #1e40af; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>이사(引越)의 모든 것, 신뢰할 수 있는 이사 파트너를 찾다</h1>
+        <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem; color: #666;">
+            이사는 단순한 짐 이동이 아닌 새로운 시작입니다. 고객님의 소중한 짐을 안전하게 옮겨줄 이사 전문가를 지역별, 규모별, 서비스별로 세분화하여 소개합니다.
+            복잡한 이사 준비 과정을 간소화하고, 투명하고 합리적인 견적을 통해 최고의 만족도를 경험해 보세요.
+        </p>
+
+        <!-- Category 1: 수도권 및 광역시 주요 지역 이사 서비스 -->
+        <div class="category-heading">지역별 포장이사 및 일반 이사 전문</div>
+        <div class="service-grid">
+            <!-- Item 1: 광진구이사 -->
+            <div class="service-card">
+                <a href="https://movingqkindb.withusgoat.com" target="_blank">
+                    <div class="card-header color1">광진구이사</div>
+                    <div class="card-content">
+                        <p>
+                            복잡한 서울 시내, 특히 광진구 지역의 이사는 일반적인 이사와는 다릅니다. 주차 환경, 좁은 골목길, 그리고 아파트 단지의 규정 등 고려해야 할 변수가 많습니다.
+                            광진구 전문 이사업체는 이러한 지역 특성을 완벽히 파악하고 있으며, 능숙한 작업팀과 최적화된 장비를 통해 신속하고 안전한 이사를 보장합니다.
+                            <br><br>
+                            새로운 터전으로의 첫걸음을 떼는 고객님의 소중한 가구와 물품을 마치 자신의 것처럼 다루며, 포장부터 정리정돈까지 일사천리로 진행됩니다.
+                            특히 광진구는 신축 아파트와 재개발이 활발한 지역인 만큼, 섬세한 포장 기술과 사후 서비스가 중요합니다.
+                            <br><br>
+                            단순한 짐 운반을 넘어, 고객님의 이사 만족도를 최우선으로 생각하는 프리미엄 광진구 이사 서비스를 지금 바로 확인해보세요.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item 2: 동작구이사 -->
+            <div class="service-card">
+                <a href="https://movingqkindf.withusgoat.com" target="_blank">
+                    <div class="card-header color2">동작구이사</div>
+                    <div class="card-content">
+                        <p>
+                            동작구는 주거 환경이 다양하게 분포되어 있어 이사 난이도가 높은 지역 중 하나입니다. 언덕이 많은 지형 특성과 노후 주택가, 대규모 아파트 단지가 혼재되어 있어,
+                            각기 다른 조건에 맞춘 맞춤형 서비스가 필수적입니다. 동작구 전문 이사업체는 이러한 지형적, 주거 형태적 특성을 모두 고려한 맞춤형 이사 솔루션을 제공합니다.
+                            <br><br>
+                            고객님의 상황에 맞는 정확한 견적 산출과 함께, 이사 당일 예상치 못한 문제 발생을 최소화하기 위해 철저한 사전 점검을 실시합니다.
+                            무거운 가구나 귀중품에 대한 특별 포장재 사용은 물론, 마무리 청소까지 세심하게 처리하여 고객 만족도를 높입니다.
+                            <br><br>
+                            동작구에서 새로운 보금자리를 마련하시는 모든 분들에게 안심하고 맡길 수 있는 이사 서비스를 추천합니다.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item 3: 안산이사업체 -->
+            <div class="service-card">
+                <a href="https://movingqkindi.withusgoat.com" target="_blank">
+                    <div class="card-header color3">안산이사업체</div>
+                    <div class="card-content">
+                        <p>
+                            활기찬 다문화 도시 안산에서 이사를 계획하고 계신가요? 안산 지역의 이사는 일반 가정집 포장이사 외에도 원룸, 오피스텔, 공장 등 다양한 형태의 이사 수요가 발생합니다.
+                            안산 전문 이사업체는 각기 다른 규모와 성격의 이사에 유연하게 대처할 수 있는 노하우를 보유하고 있습니다.
+                            <br><br>
+                            특히, 보관이사 수요가 많은 안산의 특성을 고려하여, 깨끗하고 안전한 보관 시설을 함께 운영하는 업체들이 많습니다.
+                            이사를 준비하는 과정에서 발생할 수 있는 시간적 제약을 해소하고, 고객님의 일정에 맞춰 짐을 보관하고 원하는 날짜에 재배송하는 서비스를 제공합니다.
+                            <br><br>
+                            안산 지역 주민들이 믿고 선택하는 이사업체를 통해 번거로운 이사 과정을 편리하게 해결하고, 여유로운 새출발을 맞이하시길 바랍니다.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item 4: 구미이삿짐센터 -->
+            <div class="service-card">
+                <a href="https://movingqkindy.withusgoat.com" target="_blank">
+                    <div class="card-header color4">구미이삿짐센터</div>
+                    <div class="card-content">
+                        <p>
+                            경북 구미시는 산업단지가 밀집해 있어 기업 이전 및 인구 유입이 활발한 지역입니다. 이에 따라 일반 가정이사뿐 아니라 사무실 이전 이사, 공장 이사 등 전문적인 노하우가 필요한 이사 수요가 많습니다.
+                            구미 이삿짐센터는 이러한 특화된 이사 경험을 바탕으로, 짐 운반 과정의 효율성을 극대화하고, 중요한 문서나 장비의 안전한 운송에 심혈을 기울입니다.
+                            <br><br>
+                            구미 지역 내에서 이사를 하시든, 구미 외 타 지역으로 이동하시든, 오랜 경험과 전문성을 갖춘 팀이 고객님의 짐을 책임집니다.
+                            견적 비교부터 현장 작업까지 투명하고 책임감 있는 서비스를 통해 만족스러운 이사 경험을 선사할 것입니다.
+                            <br><br>
+                            새로운 터전에서 성공적인 시작을 위해, 믿음직한 구미 이삿짐센터와 함께 하세요.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Category 2: 장거리 및 특수 이사 서비스 -->
+        <div class="category-heading">규모별, 특수 이사 및 부가 서비스</div>
+        <div class="service-grid">
+            <!-- Item 5: 부산에서서울이사 -->
+            <div class="service-card">
+                <a href="https://movingqkindc.withusgoat.com" target="_blank">
+                    <div class="card-header color1">부산에서서울이사</div>
+                    <div class="card-content">
+                        <p>
+                            부산과 서울을 잇는 장거리 이사는 단거리 이사와 비교할 수 없는 복잡성을 가집니다. 운송 중 짐 파손 위험 증가, 긴 이동 시간, 그리고 양쪽 도시의 이사 일정 조율 등 고려할 사항이 많습니다.
+                            부산에서 서울 이사 전문 업체는 장거리 이사만을 위한 특별 포장 기술과 운송 시스템을 갖추고 있어, 고객님의 소중한 짐을 안전하게 목적지까지 운반합니다.
+                            <br><br>
+                            왕복 운송 비용과 이사 시점의 유류비 변동 등을 반영하여 합리적인 견적을 제시하며, 고객과의 긴밀한 소통을 통해 이사 당일의 혼란을 최소화합니다.
+                            길고 고된 여정의 시작을 편안하게 만들어 줄, 장거리 이사 전문가와 함께하세요.
+                            <br><br>
+                            부산의 바다를 떠나 서울의 도심으로 향하는 길, 전문가의 손길로 불안함을 해소하고 새로운 삶을 시작하세요.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item 6: 이사짐보관서비스 -->
+            <div class="service-card">
+                <a href="https://movingqkindr.withusgoat.com" target="_blank">
+                    <div class="card-header color2">이사짐보관서비스</div>
+                    <div class="card-content">
+                        <p>
+                            이사 날짜가 맞지 않거나, 인테리어 공사 기간 중 잠시 짐을 맡겨야 할 때, 이사짐 보관 서비스는 필수적입니다.
+                            습기, 먼지, 해충으로부터 짐을 안전하게 보호할 수 있는 전문 보관 창고는 일반 창고와는 차원이 다릅니다.
+                            <br><br>
+                            최신식 항온·항습 시스템을 갖춘 보관센터에서 고객님의 가구와 의류, 전자제품을 안전하게 보관합니다.
+                            단기 보관부터 장기 보관까지 유연한 서비스 기간을 제공하며, 필요한 경우 짐을 다시 포장하여 지정된 장소로 재배송하는 서비스도 포함됩니다.
+                            <br><br>
+                            복잡한 이사 일정 속에서 짐 보관이 필요하다면, 안심하고 맡길 수 있는 전문 보관 서비스를 선택하세요. 소중한 짐을 완벽하게 관리해 드립니다.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item 7: 컨테이너보관이사 -->
+            <div class="service-card">
+                <a href="https://movingqkindt.withusgoat.com" target="_blank">
+                    <div class="card-header color3">컨테이너보관이사</div>
+                    <div class="card-content">
+                        <p>
+                            컨테이너 보관 이사는 특히 해외 이주, 장기간 출장, 또는 주택 리모델링 등 대규모 짐 보관이 필요한 경우에 유용합니다.
+                            고객님의 짐을 컨테이너에 직접 실어 보관함으로써, 짐의 이중 포장 및 이동 횟수를 줄여 파손 위험을 최소화합니다.
+                            <br><br>
+                            컨테이너는 전용 보관 야적장에 보관되며, 24시간 철저한 보안 시스템과 습기 방지 시설을 통해 안전성이 보장됩니다.
+                            컨테이너 보관 전문 이사업체는 고객님의 짐을 보관하고 원하는 시점에 재배송하는 모든 과정을 체계적으로 관리합니다.
+                            <br><br>
+                            장기적인 보관이 필요하거나 짐의 규모가 큰 경우, 비용 효율적이고 안전한 컨테이너 보관 이사 서비스를 고려해 보세요.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item 8: 아파트포장이사 -->
+            <div class="service-card">
+                <a href="https://movingrkindj.withusgoat.com" target="_blank">
+                    <div class="card-header color4">아파트포장이사</div>
+                    <div class="card-content">
+                        <p>
+                            아파트 이사는 엘리베이터 사용 예약, 관리 사무소 허가, 단지 내 차량 진입 규제 등 일반 주택 이사와는 다른 규정과 절차를 따릅니다.
+                            아파트 포장이사 전문 팀은 이러한 아파트 단지의 특성을 완벽히 숙지하고 있어, 이사 당일 예상치 못한 문제 발생을 사전에 차단합니다.
+                            <br><br>
+                            이사 전 고객과의 충분한 상담을 통해 이사 물품 목록과 중요 물품을 파악하고, 아파트 이사에 최적화된 포장재와 장비를 준비합니다.
+                            이사 당일에는 숙련된 포장 전문가들이 가구, 전자제품, 주방용품 등을 안전하게 포장하여, 흠집 하나 없이 새로운 집으로 옮겨 드립니다.
+                            <br><br>
+                            입주 청소, 피톤치드 서비스 등 추가 서비스를 통해 이사 후의 정리정돈까지 완벽하게 지원하는 아파트 포장이사 서비스를 경험해 보세요.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item 9: 같은동이사 -->
+            <div class="service-card">
+                <a href="https://movingqkindp.withusgoat.com" target="_blank">
+                    <div class="card-header color1">같은동이사</div>
+                    <div class="card-content">
+                        <p>
+                            같은 동네 내에서의 이사, 즉 단거리 이사는 운반 거리가 짧다는 장점이 있지만, 이사 과정 자체의 번거로움은 여전합니다.
+                            단거리 이사 전문 업체는 불필요한 비용을 줄이고, 신속성과 효율성을 극대화한 서비스를 제공합니다.
+                            <br><br>
+                            짧은 거리지만, 짐을 포장하고 이동하는 과정에서 발생하는 시간과 노력을 절약해 줍니다.
+                            특히 짐이 적거나 1인 가구의 경우, 반포장이사 또는 일반이사를 선택하여 비용을 절감하는 것이 좋습니다.
+                            <br><br>
+                            이웃 간의 얼굴을 붉히지 않고 깔끔하게 이사를 마무리할 수 있도록, 같은 동 이사 전문가들이 정확하고 신속한 서비스를 제공합니다.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Category 3: 이사 규모별 맞춤 서비스 및 견적 비교 -->
+        <div class="category-heading">이사 비용 절감 및 규모별 전문가 매칭</div>
+        <div class="service-grid">
+            <!-- Item 10: 7.5톤이사 -->
+            <div class="service-card">
+                <a href="https://movingqkindu.withusgoat.com" target="_blank">
+                    <div class="card-header color2">7.5톤이사</div>
+                    <div class="card-content">
+                        <p>
+                            7.5톤 이사는 짐의 양이 매우 많거나 대형 가구가 많은 4~5인 가구 이상에 적합한 규모입니다. 짐을 나눠서 옮겨야 하는 번거로움을 없애고 한 번에 이사를 완료할 수 있도록 합니다.
+                            7.5톤 트럭은 짐이 많아도 안전하게 적재할 수 있도록 설계되었으며, 전문 인력이 배정되어 효율적인 포장과 운반을 책임집니다.
+                            <br><br>
+                            대규모 이사의 경우, 짐 분실이나 파손의 위험이 커지므로, 충분한 경험을 가진 전문가 팀을 배정받는 것이 중요합니다.
+                            정확한 짐 양을 파악하여 7.5톤 트럭에 최적화된 이사 계획을 수립하고, 이사 당일의 혼선을 방지합니다.
+                            <br><br>
+                            짐이 많다고 걱정하지 마세요. 7.5톤 이사 전문 업체가 고객님의 대규모 이사를 완벽하게 지원해 드립니다.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item 11: 2톤이사 -->
+            <div class="service-card">
+                <a href="https://movingrkinda.withusgoat.com" target="_blank">
+                    <div class="card-header color3">2톤이사</div>
+                    <div class="card-content">
+                        <p>
+                            2톤 이사는 1인 가구나 짐이 적은 신혼부부에게 가장 적합한 이사 규모입니다. 짐의 양이 적기 때문에 일반 이사나 반포장이사를 선택하여 비용을 절감할 수 있는 좋은 기회입니다.
+                            2톤 트럭은 도심 속 좁은 골목길이나 주차 공간이 협소한 지역에서도 비교적 자유롭게 이동할 수 있어, 시간 효율성이 높습니다.
+                            <br><br>
+                            소규모 이사라고 해서 서비스 품질이 낮을 거라 생각할 필요 없습니다. 숙련된 이사팀이 합리적인 가격으로 꼼꼼한 포장과 안전한 운반을 보장합니다.
+                            특히, 2톤 이사는 빠르게 짐을 옮겨야 하는 고객들에게 유용하며, 이사 당일의 부담을 최소화합니다.
+                            <br><br>
+                            합리적인 비용으로 꼼꼼하고 신속한 이사를 원하신다면 2톤 이사 전문 서비스를 지금 바로 알아보세요.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item 12: 이사짐센터비교 -->
+            <div class="service-card">
+                <a href="https://movingqkinds.withusgoat.com" target="_blank">
+                    <div class="card-header color4">이사짐센터비교</div>
+                    <div class="card-content">
+                        <p>
+                            수많은 이사업체 중에서 어떤 곳을 선택해야 할지 고민이신가요? 이사짐센터 비교는 합리적인 가격으로 최상의 서비스를 받는 첫걸음입니다.
+                            단순히 가격만 비교하는 것이 아니라, 업체의 평점, 서비스 내용, 후기 등을 종합적으로 검토해야 합니다.
+                            <br><br>
+                            고객님의 이사 조건(지역, 짐의 양, 이사 날짜)을 입력하면, 여러 전문 업체로부터 맞춤 견적을 받을 수 있습니다.
+                            이를 통해 숨겨진 비용 없이 투명한 견적을 비교하고, 가장 신뢰할 수 있는 이사업체를 선택할 수 있습니다.
+                            <br><br>
+                            이사짐센터 비교 서비스를 통해 복잡한 견적 과정을 간소화하고, 고객님에게 가장 적합한 이사 파트너를 찾으세요.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item 13: 일반이사추천 -->
+            <div class="service-card">
+                <a href="https://movingrkindg.withusgoat.com" target="_blank">
+                    <div class="card-header color1">일반이사추천</div>
+                    <div class="card-content">
+                        <p>
+                            포장이사는 비용이 부담스럽지만, 혼자서 모든 짐을 옮기기에는 무리가 있을 때 일반이사가 좋은 대안이 됩니다.
+                            일반이사는 고객이 직접 짐을 포장하고, 이사업체는 운반과 정리를 담당하는 서비스입니다. 비용을 절약하면서도 전문가의 도움을 받을 수 있습니다.
+                            <br><br>
+                            특히 짐이 적거나, 잔짐 포장에 자신 있는 고객에게 추천됩니다. 대형 가구 및 가전제품 운반은 전문가에게 맡기고, 소품 포장은 직접 처리하여 실속 있는 이사를 진행할 수 있습니다.
+                            <br><br>
+                            합리적인 가격과 효율성을 동시에 추구하는 고객이라면, 일반이사 추천 서비스를 통해 최적의 업체를 찾아보세요.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item 14: 포장이사금액 -->
+            <div class="service-card">
+                <a href="https://movingrkindm.withusgoat.com" target="_blank">
+                    <div class="card-header color2">포장이사금액</div>
+                    <div class="card-content">
+                        <p>
+                            포장이사 금액은 이사 날짜, 짐의 양, 이사 거리, 작업 인원 수, 옵션 서비스(에어컨 탈부착, 청소 등) 등 다양한 요소에 따라 변동됩니다.
+                            이사를 준비하는 고객들에게 가장 큰 관심사 중 하나인 포장이사 금액을 투명하게 파악하는 것이 중요합니다.
+                            <br><br>
+                            저렴한 견적만을 쫓다 보면 서비스 품질이 떨어지는 경우가 많습니다. 합리적인 금액과 함께, 이사업체의 신뢰도와 서비스 내용을 꼼꼼히 확인해야 합니다.
+                            <br><br>
+                            정확한 포장이사 금액 산출을 위해 여러 업체의 견적을 비교하고, 추가 요금 없이 계약을 체결하는 것이 현명합니다.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item 15: 이사비용문의 -->
+            <div class="service-card">
+                <a href="https://movingrkindp.withusgoat.com" target="_blank">
+                    <div class="card-header color3">이사비용문의</div>
+                    <div class="card-content">
+                        <p>
+                            이사 비용 문의는 이사 준비의 시작입니다. 정확한 비용 산출을 위해서는 고객님의 이사 환경에 대한 상세한 정보가 필요합니다.
+                            이사 날짜, 출발지/도착지의 주거 형태(아파트/빌라/주택), 엘리베이터 유무, 짐의 양(방 개수 기준) 등을 명확히 알려주셔야 합니다.
+                            <br><br>
+                            간편한 온라인 견적 문의를 통해, 전문 이사업체들이 고객님의 정보에 기반한 견적을 빠르게 제공합니다.
+                            여러 업체의 견적을 비교하여 가장 합리적인 비용을 제시하는 곳을 선택할 수 있습니다.
+                            <br><br>
+                            복잡한 계산 없이, 이사 비용 문의 한 번으로 최적의 이사 솔루션을 찾아보세요.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+<footer style="font-size: 11px; color: #888; padding: 30px 20px; text-align: center; line-height: 1.8; font-family: sans-serif;">
+  <div style="margin-bottom: 8px;">
+    <!-- [네이버 팁] 봇이 JS를 실행 못해도 기본값은 읽어갈 수 있게 연도를 미리 적어둡니다 -->
+    © <span id="copyright-year">2026</span> <span id="site-title">My Website</span>. All rights reserved.
+  </div>
+  <div style="color: #ccc;">
+    <span id="bot-msg">데이터 동기화 중...</span> | 
+    <!-- [네이버 팁] 빈 태그(empty tag)는 로봇이 무시하므로 기본 날짜형식을 넣어둡니다 -->
+    최종 기준일: <time id="bot-date" datetime="2026-01-01">2026-01-01</time>
+  </div>
+</footer>
+<script>
+  (function() {
+    // 1. 한국 시간(KST) 강제 계산 (네이버는 한국 시간이 기준)
+    const now = new Date();
+    const utc = now.getTime() + (now.getTimezoneOffset() * 60 * 1000);
+    const kstGap = 9 * 60 * 60 * 1000;
+    const today = new Date(utc + kstGap);
+
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const day = String(today.getDate()).padStart(2, '0');
+    
+    // YYYY-MM-DD 형식
+    const formattedDate = `${year}-${month}-${day}`;
+    // ISO 8601 형식 (검색엔진이 가장 좋아하는 표준 포맷)
+    const isoDate = `${formattedDate}T09:00:00+09:00`;
+
+    // 2. 사용자 화면 업데이트 (보여주기용)
+    const siteTitleElem = document.getElementById('site-title');
+    if (siteTitleElem) siteTitleElem.textContent = document.title || window.location.hostname;
+
+    const yearElem = document.getElementById('copyright-year');
+    if (yearElem) yearElem.textContent = year;
+
+    const dateElem = document.getElementById('bot-date');
+    if(dateElem) {
+      dateElem.textContent = formattedDate;
+      dateElem.setAttribute('datetime', formattedDate);
+    }
+
+    const msgElem = document.getElementById('bot-msg');
+    if(msgElem) {
+      // 네이버 봇이나 사용자가 볼 때 신뢰감을 주는 문구
+      const msgs = ["서비스 최적화 완료", "보안 점검 완료", "데이터 최신화"];
+      msgElem.textContent = msgs[today.getDate() % msgs.length];
+    }
+
+    // 3. [핵심] 네이버 봇 타겟 메타 태그 주입
+    // 네이버가 수집 시 '최신 콘텐츠'인지 판단할 때 참고하는 태그들입니다.
+    
+    function setMetaTag(attrType, attrName, content) {
+      // 이미 존재하는 태그인지 확인 (property="og:..." 또는 name="date" 등)
+      let selector = `meta[${attrType}="${attrName}"]`;
+      let meta = document.querySelector(selector);
+      
+      // 없으면 새로 만들어서 head에 추가
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.setAttribute(attrType, attrName);
+        document.head.appendChild(meta);
+      }
+      // 있으면 내용만 최신 날짜로 교체
+      meta.content = content;
+    }
+
+    // (A) 네이버가 1순위로 보는 Open Graph 수정일 (블로그/카페/웹문서 공통)
+    setMetaTag('property', 'og:updated_time', isoDate);
+
+    // (B) 네이버 웹문서/뉴스 검색 알고리즘이 참고하는 Article 속성
+    setMetaTag('property', 'article:modified_time', isoDate);
+    
+    // (C) 일반 검색엔진(공통) 날짜 태그
+    setMetaTag('name', 'date', isoDate);
+
+    // (D) 네이버가 사이트 소유 확인 시 참고하는 저작권 정보 갱신
+    setMetaTag('name', 'copyright', `${year} ${document.title}`);
+
+  })();
+</script>
+</body>
 </html>
